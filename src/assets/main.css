@@ -1,0 +1,144 @@
+/* - Mobile: 375px (320px min)
+- Desktop: 1440px*/
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: url("bg-stars.svg"), linear-gradient(to bottom, hsl(234, 17%, 12%), hsl(274, 41%, 12%));
+  background-size: cover;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-family: 'Red Hat Text', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: 10px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  padding-inline: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: 900;
+  color: hsl(345, 95%, 68%);
+}
+
+h3 {
+  padding-top: 1.5rem;
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: 600;
+  color: hsl(237, 18%, 59%);
+  text-shadow: 1px 1px 2px hsl(236, 21%, 26%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  padding-top: 16vh;
+}
+
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 48rem;
+  height: 14rem;
+  align-content: space-between;
+  align-items: center;
+}
+
+.time-card {
+  width: 8rem;
+  padding: 1.5rem 0.5rem;
+  margin-inline: 1rem;
+  text-align: center;
+  border-radius: 15%;
+  background: linear-gradient(to bottom, hsl(235, 22%, 20%) 0%, hsl(235, 22%, 20%) 49.5%, hsl(228, 20%, 5%) 49.5%, hsl(228, 20%, 5%) 50.5%, hsl(236, 21%, 26%) 50.5%, hsl(236, 21%, 26%) 100%);
+  box-shadow: 1px 8px hsl(228, 20%, 5%);
+}
+
+.footer {
+  min-height: 12rem;
+  width: 100%;
+  margin-bottom: 0;
+  background-image: url("pattern-hills.svg");
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 12vh;
+}
+
+.social-icon {
+  size: 30px;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  filter: invert(20%) sepia(78%) saturate(500%) hue-rotate(300deg) contrast(85%);
+}
+
+@media (max-width: 770px) {
+  h1 {
+    font-size: 24px;
+    letter-spacing: 8px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 12px;
+    padding-top: 1rem;
+    letter-spacing: 4px;
+  }
+  .counter {
+    width: 30rem;
+    height: 10rem;
+  }
+  .time-card {
+    width: 4.5rem;
+    padding: 1rem 0.5rem;
+    margin-inline: 0.5rem;
+  }
+}
+
+@media (max-width: 490px) {
+  h1 {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+  h3 {
+    padding-bottom: 3rem;
+  }
+  .counter {
+    width: 20rem;
+    height: 22rem;
+    align-content: space-evenly;
+  }
+  .time-card {
+    width: 5rem;
+  }
+}
