@@ -1,3 +1,26 @@
+<template>
+    <div class="container">
+    <div class="title"><h1>We're launching soon</h1></div>
+    <div class="counter">
+      <div class="time-card"><h2>{{ days }}</h2></div>
+      <h3>days</h3>
+      <div class="time-card"><h2>{{ hours }}</h2></div>
+      <h3>hours</h3>
+      <div class="time-card"><h2>{{ minutes }}</h2></div>
+      <h3>minutes</h3>
+      <div class="time-card"><h2>{{ seconds }}</h2></div>
+      <h3>seconds</h3>
+    </div>
+    <div class="footer">
+      <div class="socials">
+      <img class="social-icon" :src="IconFacebook" alt="Icon Facebook"/>
+      <img class="social-icon" :src="IconInstagram" alt="Icon Instagram"/>
+      <img class="social-icon" :src="IconPinterest" alt="Icon Pinterest"/>
+    </div>
+    </div>
+  </div>
+</template>
+
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue';
 import IconFacebook from './assets/icon-facebook.svg';
@@ -47,26 +70,3 @@ onBeforeUnmount(() => {
 });
 
 </script>
-
-<template>
-    <div class="container">
-    <div class="title"><h1>We're launching soon</h1></div>
-    <div class="counter">
-      <div class="time-card"><h2>{{ days }}</h2></div>
-      <h3>days</h3>
-      <div class="time-card"><h2>{{ hours }}</h2></div>
-      <h3>hours</h3>
-      <div class="time-card"><h2>{{ minutes }}</h2></div>
-      <h3>minutes</h3>
-      <div class="time-card"><h2>{{ seconds }}</h2></div>
-      <h3>seconds</h3>
-    </div>
-    <div class="footer">
-      <div class="socials">
-      <img class="social-icon" :src="IconFacebook" alt="Icon Facebook"/>
-      <img class="social-icon" :src="IconInstagram" alt="Icon Instagram"/>
-      <img class="social-icon" :src="IconPinterest" alt="Icon Pinterest"/>
-    </div>
-    </div>
-  </div>
-</template>
